@@ -1,4 +1,4 @@
-```javascript
+/*
 // ==========================================================
 // JAVASCRIPT DATA TYPES
 // ==========================================================
@@ -150,4 +150,26 @@ console.log(obj2.name); // Rahul
 // ✔ typeof null === "object" is a historical JavaScript bug.
 // ✔ Always use Array.isArray() to check for arrays.
 // ✔ Use === instead of == to avoid type coercion.
-```
+*/
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// const { userInfo } = require("node:os")
+// const { use } = require("react")
+
+// Stack(Primitive), Heap(Non-Primitive)
+// let myNmae = "Uday"
+// let anothernmae = myNmae
+// anothernmae = "Sharma"
+// console.log(myNmae)
+// console.log(anothernmae)
+
+
+let user1={
+    email:"usder@gmail.com",
+    upi:"user@ybi"
+}
+
+let user2 =user1
+user2.email="qwerty@gmail.com"
+console.log(user1.email)
+console.log(user2.email)
