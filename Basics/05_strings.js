@@ -22,6 +22,7 @@ console.log(gameName.replace('-','@'))
 
 
 
+
 console.log(gameName.split('-'));
 
 
