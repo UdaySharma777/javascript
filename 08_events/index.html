@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image List</title>
+</head>
+<body style="background-color: #414141;color: aliceblue;">
+
+    <h2>My Image Gallery</h2>
+
+    <ul id="images">
+
+        <li id="mountain">
+            <img src="https://picsum.photos/id/1015/200/200" alt="Mountain">
+        </li>
+
+        <li id="dog">
+            <img src="https://picsum.photos/id/1025/200/200" alt="Dog">
+        </li>
+
+        <li id="river">
+            <img src="https://picsum.photos/id/1035/200/200" alt="River">
+        </li>
+
+        <li id="forest">
+            <img src="https://picsum.photos/id/1043/200/200" alt="Forest">
+        </li>
+
+        <li id="beach">
+            <img src="https://picsum.photos/id/1050/200/200" alt="Beach">
+        </li>
+
+        <li id="googleLink">
+            <a style="color: aliceblue;" href="https://google.com" id="google"></a>
+        </li>
+
+    </ul>
+<script>
+// document.getElementById('mountain').onclick = function(){
+//     alert('Mountain clicked')}
+// document.getElementById('mountain').addEventListener('click', function(){
+//     alert("mountain clicked")
+// },false)
+
+// attachEvent()
+//jQuery - on (event listener)
+
+document.getElementById('mountain').addEventListener('click',function(e){
+    e.stopPropagation()    
+    console.log(e);
+},false)
+
+document.getElementById('dog').addEventListener('click',function(e){
+    console.log('clicked inside the ul');
+},false)
+
+document.getElementById('river').addEventListener('click',function(e){
+    console.log('river clicked');
+
+},false)
+//here false is used to preevnt deafult behaviour of tag
+// to study about type,timestamp, defultprevented, target, Toelement,srcelement,currentTarget,clientx,clenty,screex,screey
+//altkey, ctrlkey, shiftkey, keycode,
+// bubbling event
+//
+
+document.getElementById('google').addEventListener('click',function(e){
+    console.log('google clicked')
+    e.defaultPrevented()
+},false)
+
+</script>
+</body>
+</html>
